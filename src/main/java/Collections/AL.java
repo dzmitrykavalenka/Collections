@@ -17,6 +17,9 @@ public class AL {
         for (int i = 0; i < 100; i++) {
             list_linked.add((int) (Math.random() * 100));
         }
+
+        /*GET*/
+
         System.out.println("-------------GET--------------");
         long start = System.nanoTime();
         list_array.get(50);
@@ -33,6 +36,9 @@ public class AL {
         } else {
             System.out.println("LinkedList is faster\n");
         }
+
+        /*ADD*/
+
         System.out.println("-------------ADD--------------");
         long addStart = System.nanoTime();
         list_array.add(50, 100);
@@ -49,6 +55,9 @@ public class AL {
         } else {
             System.out.println("LinkedList is faster\n");
         }
+
+        /*SET*/
+
         System.out.println("-------------SET--------------");
         long setStart = System.nanoTime();
         list_array.set(50, 100);
@@ -65,6 +74,8 @@ public class AL {
         } else {
             System.out.println("LinkedList is faster\n");
         }
+
+        /*REMOVE*/
 
         System.out.println("-------------Remove--------------");
         long removeStart = System.nanoTime();

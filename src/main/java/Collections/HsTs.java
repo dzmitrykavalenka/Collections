@@ -12,6 +12,9 @@ public class HsTs {
         System.out.println("Compare HashSet and TreeSet performance\n");
         HashSet<Integer> set_hash = new HashSet<>();
         TreeSet<Integer> set_tree = new TreeSet<>();
+
+        /*Filling the Sets*/
+
         System.out.println("-----------Filling the sets---------");
         long addStart = System.nanoTime();
         for (int i = 0; i < 100; i++) {
@@ -33,6 +36,8 @@ public class HsTs {
             System.out.println("TreeSet is faster\n");
         }
 
+        /*CONTAINS*/
+
         System.out.println("-------------Contains--------------");
         long startContains = System.nanoTime();
         set_hash.contains(10);
@@ -49,6 +54,9 @@ public class HsTs {
         } else {
             System.out.println("TreeSet is faster\n");
         }
+
+        /*ToArray*/
+
         System.out.println("-------------To Array--------------");
         long startToArray = System.nanoTime();
         set_hash.toArray();
@@ -65,6 +73,9 @@ public class HsTs {
         } else {
             System.out.println("TreeSet is faster\n");
         }
+
+        /*AddAll*/
+
         System.out.println("-------------AddAll--------------");
         long startAddAll = System.nanoTime();
         set_hash.addAll(set_tree);
@@ -81,6 +92,9 @@ public class HsTs {
         } else {
             System.out.println("TreeSet is faster\n");
         }
+
+        /*Add*/
+
         System.out.println("-------------Add--------------");
         long startAdd = System.nanoTime();
         set_hash.add(105);
