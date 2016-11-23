@@ -111,6 +111,5 @@ public class HsTs {
         } else {
             System.out.println("TreeSet is faster\n");
         }
-        System.out.println(set_hash + "\n" + set_tree);
     }
 }
